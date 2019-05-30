@@ -6,7 +6,8 @@ def reverse_each_word_with_each(sentence)
 end
 
 def reverse_each_word_with_collect(sentence)
-  sentence_to_array = sentence.split(" ")
-  sentence_to_array.collect { |n| n.reverse}
-  sentence_to_array.join(" ")
+  sentence_to_array2 = sentence.split(" ")
+  new_array2 = []
+  sentence_to_array2.collect { |n| new_array2 << n.reverse}
+  new_array2.join(" ")
 end
